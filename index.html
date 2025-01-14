@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images\paw.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Pets Home UA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-row">
+            <a href="index.html">
+                <img src="images/logo.png" id="logo" alt="Лого">
+            </a>
+            <div class="icons">
+                <img src="images/loved.png" class="loved" tabindex="0" alt="Вподобане">
+                <img src="images/profile.png" class="user" tabindex="0" alt="Профіль">
+            </div>
+        </div>
+        <ul class="header-content">
+            <li><a href="index.html">Про нас</a></li>
+            <li><a href="pets.html">Оголошення</a></li>
+            <li><a href="contact.html">Зв'язатися з нами</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Покращуємо життя<img src="images\heart.png" id="heart" alt="Руки, складені як серце"></h1>
+                <h3>вам та вашим пухнастикам</h3>
+                <p>Платформа, де легко знайти нового пухнастого друга або надійного господаря для свого улюбленця.<br>
+                    Безпека, прозорість та зручність — наші головні пріоритети.</p>
+                <div class="buttons">
+                    <button class="button button-green">ЗНАЙТИ ПУХНАСТИКА <img src="images\Vector 12.png" class="arrow"
+                            alt="Стрілка вправо"></button>
+                    <button class="button button-black">ЗНАЙТИ ГОСПОДАРЯ <img src="images\Vector12.png" class="arrow"
+                            alt="Стрілка вправо"></button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images\photo.png" alt="Щасливий пес на галявині">
+            </div>
+        </section>
+
+        <section class="why-us">
+            <div class="header1">
+                <a href="index.html">
+                    <img src="images\Pets Home UA.png" id="logo" alt="Лого">
+                </a>
+                <ul>
+                    <li><a href="index.html">Про нас</a></li>
+                    <li><a href="pets.html">Оголошення</a></li>
+                    <li><a href="contact.html">Зв'язатися з нами</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <div class="title-text">
+                    <h2>Чому саме ми?</h2>
+                    <h4>Бо ми знаходимо дім <br>
+                        для кожної лапки!</h4>
+                </div>
+
+                <div class="row">
+                    <div class="card" style="flex: 1; margin-right: 10px;">
+                        <h5>Перевірені профілі та безпека</h5>
+                        <p>Ретельно перевіряємо інформацію, забезпечуючи прозорі та безпечні угоди для всіх
+                            користувачів.</p>
+                        <h4>01</h4>
+                    </div>
+                    <img src="images\photo-1.png" alt="Dog image" class="card-image" style="flex: 1;">
+                </div>
+
+                <div class="row second-row">
+                    <img src="images\photo1.png" alt="Dog image" class="card-image"
+                        style="flex: 1; margin-right: 10px;">
+                    <div class="card" style="flex: 2; margin: 0 10px;">
+                        <h5>Великий вибір та легкий пошук</h5>
+                        <p>Ми знайдемо особливого пухнастика саме для вас! Обирайте тварин через зручні фільтри для
+                            швидкого та простого пошуку вашого нового друга або відповідального господаря.</p>
+                        <h4>02</h4>
+                    </div>
+                    <div class="card" style="flex: 1.5;">
+                        <h5>Зручність та підтримка 24/7</h5>
+                        <p>Інтуїтивна платформа та наша підтримка завжди на зв'язку, щоб допомогти вам у будь-якому
+                            питанні.</p>
+                        <h4>03</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner Section -->
+        <section class="partner">
+            <img src="images\Subtract.png" id="background" alt="Синій фон">
+            <div class="container">
+                <div class="content">
+                    <a href="index.html">
+                        <img src="images\Pets Home UA.png" id="logo" alt="Лого">
+                    </a>
+                    <h2>БАЖАЄТЕ СТАТИ</h2>
+                    <h2 id="textWithPhoto">НАШИМ <img src="images\OIG1.OzPtE4S7o7crawsjQjxS-removebg-preview 1.png"
+                            alt="Голова пуделя">
+                        ПАРТНЕРОМ?</h2>
+                    <button class="button button-green button-partner">СТАТИ ПАРТНЕРОМ <img src="images\Vector 12.png"
+                            class="arrow" alt="Стрілка вправо"></button>
+                </div>
+                <img src="images\photo.png" id="photo" alt="Щасливий пес на галявині">
+            </div>
+        </section>
+
+        <!-- Pets Section -->
+        <section class="pets">
+            <h2>НАШІ ПУХНАСТИКИ</h2>
+            <h4 class="filterstext">Фільтри</h4>
+            <div class="filters">
+                <div class="dropdown">
+                    <button class="dropdown-toggle dropdown-toggle1" onclick="toggleDropdown(this)">Стать <img
+                            src="images/Vector1.png" alt="Стрілка вниз"></button>
+                    <div class="dropdown-menu">
+                        <label>
+                            <input type="checkbox" name="gender" value="boy" />
+                            Хлопчик
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gender" value="girl" />
+                            Дівчинка
+                        </label>
+                        <button class="apply-button">ЗАСТОСУВАТИ</button>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-toggle dropdown-toggle2" onclick="toggleDropdown(this)">Вік <img
+                            src="images/Vector1.png" alt="Стрілка вниз"></button>
+                    <div class="dropdown-menu dropdown-menu2">
+                        <label>
+                            <input type="checkbox" name="age" value="young" />
+                            До 1 року
+                        </label>
+                        <label>
+                            <input type="checkbox" name="age" value="older" />
+                            1-5 років
+                        </label>
+                        <label>
+                            <input type="checkbox" name="age" value="old" />
+                            5+ років
+                        </label>
+                        <button class="apply-button">ЗАСТОСУВАТИ</button>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-toggle dropdown-toggle3" onclick="toggleDropdown(this)">Розмір <img
+                            src="images/Vector1.png" alt="Стрілка вниз"></button>
+                    <div class="dropdown-menu dropdown-menu3">
+                        <label>
+                            <input type="checkbox" name="size" value="small" />
+                            Маленький <br>(до 30 см)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="size" value="medium" />
+                            Середній <br>(30-50 см)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="size" value="medium+" />
+                            Середній+ <br>(50-60 см)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="size" value="big" />
+                            Великий <br>(60+ см)
+                        </label>
+                        <button class="apply-button">ЗАСТОСУВАТИ</button>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-toggle dropdown-toggle4" onclick="toggleDropdown(this)">Місцезнаходження<img
+                            src="images/Vector1.png" alt="Стрілка вниз"></button>
+                    <div class="dropdown-menu dropdown-menu4">
+                        <label>
+                            <input type="checkbox" name="location" value="zhytomyr" />
+                            Житомир
+                        </label>
+                        <label>
+                            <input type="checkbox" name="location" value="lviv" />
+                            Львів
+                        </label>
+                        <label>
+                            <input type="checkbox" name="location" value="kyiv" />
+                            Київ
+                        </label>
+                        <label>
+                            <input type="checkbox" name="location" value="ivano-frankivsk" />
+                            Івано-Франківськ
+                        </label>
+                        <label>
+                            <input type="checkbox" name="location" value="vinnytsia" />
+                            Вінниця
+                        </label>
+                        <label>
+                            <input type="checkbox" name="location" value="dnipro" />
+                            Дніпро
+                        </label>
+                        <button class="apply-button">ЗАСТОСУВАТИ</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card boy young small zhytomyr">
+                    <div class="imgContainer">
+                        <img src="images\cute-cat-spending-time-indoors 1.png" id="pet-photo" alt="Кошеня">
+                    </div>
+                    <img class="favourite" src="images/Vector2.png" alt="Іконка серця" onclick="changeImage()">
+                    <div class="card-content">
+                        <p class="card-title">МУРЧИК</p>
+                        <p class="card-subtitle">Хлопчик, 6 місяців</p>
+                        <div class="card-location">
+                            <img src="images\Default.png" alt="Іконка локації">
+                            <span>Житомир</span>
+                        </div>
+                        <button href="#" class="apply-button">УСИНОВИТИ</button>
+                    </div>
+                </div>
+
+                <div class="card card2 boy old big dnipro">
+                    <div class="imgContainer">
+                        <img src="images\cute-dog-making-mess-with-toilet-paper 1.png" id="pet-photo" alt="Собака">
+                    </div>
+                    <img class="favourite" src="images/Vector2.png" alt="Іконка серця" onclick="changeImage()">
+                    <div class="card-content">
+                        <p class="card-title">ГАВЧИК</p>
+                        <p class="card-subtitle">Хлопчик, 5 років</p>
+                        <div class="card-location">
+                            <img src="images\Default.png" alt="Іконка локації">
+                            <span>Дніпро</span>
+                        </div>
+                        <button href="#" class="apply-button">УСИНОВИТИ</button>
+                    </div>
+                </div>
+
+                <div class="card card3 girl older medium vinnytsia">
+                    <div class="imgContainer">
+                        <img src="images\funny-fluffy-lying-animal-friend 1.png" id="pet-photo" alt="Киця">
+                    </div>
+                    <img class="favourite" src="images/Vector2.png" alt="Іконка серця" onclick="changeImage()">
+                    <div class="card-content">
+                        <p class="card-title">ЛАЙМА</p>
+                        <p class="card-subtitle">Дівчинка, 1 рік</p>
+                        <div class="card-location">
+                            <img src="images\Default.png" alt="Іконка локації">
+                            <span>Вінниця</span>
+                        </div>
+                        <button href="#" class="apply-button">УСИНОВИТИ</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card card2 card2-2 boy older medium ivano-frankivsk">
+                    <div class="imgContainer">
+                        <img src="images\pug-dog-yawning-isolated-beige-seat 1.png" id="pet-photo" alt="Собака">
+                    </div>
+                    <img class="favourite" src="images/Vector2.png" alt="Іконка серця" onclick="changeImage()">
+                    <div class="card-content">
+                        <p class="card-title">БАРСИК</p>
+                        <p class="card-subtitle">Хлопчик, 3 роки</p>
+                        <div class="card-location">
+                            <img src="images\Default.png" alt="Іконка локації">
+                            <span>Івано-Франківськ</span>
+                        </div>
+                        <button href="#" class="apply-button">УСИНОВИТИ</button>
+                    </div>
+                </div>
+
+                <div class="card card3 card3-2 card girl older medium+ lviv">
+                    <div class="imgContainer">
+                        <img src="images\portrait-beautiful-domestic-cute-cat-with-blue-eyes 1.png" id="pet-photo"
+                            alt="Киця">
+                    </div>
+                    <img class="favourite" src="images/Vector2.png" alt="Іконка серця" onclick="changeImage()">
+                    <div class="card-content">
+                        <p class="card-title">ЛІЛІЯ</p>
+                        <p class="card-subtitle">Дівчинка, 2.5 роки</p>
+                        <div class="card-location">
+                            <img src="images\Default.png" alt="Іконка локації">
+                            <span>Львів</span>
+                        </div>
+                        <button href="#" class="apply-button">УСИНОВИТИ</button>
+                    </div>
+                </div>
+
+                <div class="card card4 boy young small kyiv">
+                    <div class="imgContainer">
+                        <img src="images\isolated-portrait-little-puppy-siberian-husky-dog-with-blue-eyes-lying-floor-funny-small-dog-with-opened-mouth-resting-relaxed-looking-away-carried-dog 1.png"
+                            id="pet-photo" alt="Цуценя">
+                    </div>
+                    <img class="favourite" src="images/Vector2.png" alt="Іконка серця" onclick="changeImage()">
+                    <div class="card-content">
+                        <p class="card-title">ЗАЛИВАЙ</p>
+                        <p class="card-subtitle">Хлопчик, 7 місяців</p>
+                        <div class="card-location">
+                            <img src="images\Default.png" alt="Іконка локації">
+                            <span>Київ</span>
+                        </div>
+                        <button href="#" class="apply-button">УСИНОВИТИ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <h2>ЧАСТІ ЗАПИТАННЯ</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="faq-number">01</h3>
+                        <p class="faq-title">ЯК ДОПОМОГТИ НОВІЙ ТВАРИНІ АДАПТУВАТИСЯ ВДОМА?</p>
+                        <img src="images\Group 129.png" alt="Toggle Icon" class="faq-toggle" />
+                    </div>
+                    <div class="faq-answer">
+                        <p>Створіть для неї спокійне середовище, поступово знайомте <br>
+                            з новою обстановкою, забезпечте комфортне місце для <br>
+                            відпочинку та проявляйте терпіння і любов.</p>
+                    </div>
+                </div>
+
+                <div class="rightPaws">
+                    <img src="images\paw.png" class="rightPaw" alt="Лапка">
+                    <img src="images\paw.png" class="rightPaw" alt="Лапка">
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="faq-number">02</h3>
+                        <p class="faq-title">ЯК ВІДБУВАЄТЬСЯ ПРОЦЕС КУПІВЛІ АБО УСИНОВЛЕННЯ <br>ТВАРИНИ?</p>
+                        <img src="images\Group 129.png" alt="Toggle Icon" class="faq-toggle" />
+                    </div>
+                    <div class="faq-answer">
+                        <p style="margin-left: 1%;"> Процес усиновлення тваринки передбачає вибір тварини, <br>
+                            зв’язок із власником або притулком напряму, обговорення <br>
+                            деталей та оформлення необхідних документів. </p>
+                    </div>
+                </div>
+
+                <div class="leftPaws">
+                    <img src="images\paw2.png" class="leftPaw" alt="Лапка">
+                    <img src="images\paw2.png" class="leftPaw" alt="Лапка">
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="faq-number">03</h3>
+                        <p class="faq-title" style="margin-right: 14%;">ЧИ БЕЗПЕЧНІ УГОДИ НА ВАШОМУ САЙТІ?</p>
+                        <img src="images\Group 129.png" alt="Toggle Icon" class="faq-toggle" />
+                    </div>
+                    <div class="faq-answer">
+                        <p>Наш сайт створено з турботою про вас і ваших майбутніх улюбленців. <br>
+                            Ми ретельно перевіряємо оголошення, забезпечуємо захищену <br>
+                            платформу для спілкування та надаємо корисні рекомендації для <br>
+                            безпечного укладення угод. Ваш комфорт і безпека — наші<br>
+                            пріоритети!<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="faq-number">04</h3>
+                        <p class="faq-title" style="margin-right: 5.5%;">ЧИ МОЖУ Я ПРОДАТИ ТВАРИНУ ЧЕРЕЗ ВАШ САЙТ?</p>
+                        <img src="images\Group 129.png" alt="Toggle Icon" class="faq-toggle" />
+                    </div>
+                    <div class="faq-answer">
+                        <p>Так, ви можете продати тваринку через наш сайт: зареєструйтесь, <br>
+                            створіть оголошення з детальною інформацією про тварину та <br>
+                            додайте фото, щоб швидше знайти покупця.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="header">
+                <div class="header-row">
+                    <a href="index.html">
+                        <img src="images/logo.png" id="logo" alt="Лого">
+                    </a>
+                    <ul>
+                        <li><a href="index.html">Про нас</a></li>
+                        <li><a href="pets.html">Оголошення</a></li>
+                        <li><a href="contact.html">Зв'язатися з нами</a></li>
+                    </ul>
+                    <img src="images/profile.png" class="user" alt="Профіль">
+                </div>
+            </div>
+            <div class="container">
+                <h2>ЗАЛИШИЛИСЬ ПИТАННЯ?</h2>
+                <h3>ЗВ'ЯЖІТСЯ З НАМИ!</h3>
+                <button class="button button-yellow">ЗВ'ЯЗАТИСЯ З НАМИ<img src="images\Vector 12.png" class="arrow"
+                        alt="Стрілка вправо"></button>
+            </div>
+            <img src="images\photo (1).png" id="dog" alt="Собака махає лапою">
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="images\Pets Home UA.png" id="logo" alt="Лого">
+            </a>
+            <p>Покращуємо життя вам та вашим пухнастикам!</p>
+            <div class="buttons">
+                <button class="button button-black">ЗНАЙТИ ГОСПОДАРЯ <img src="images\Vector12.png" class="arrow"
+                        alt="Стрілка вправо"></button>
+                <button class="button button-green">ЗНАЙТИ ПУХНАСТИКА <img src="images\Vector 12.png" class="arrow"
+                        alt="Стрілка вправо"></button>
+            </div>
+            <div class="footer-designer">
+                Designed by <a href="#">Viktoria Dudych.</a>
+                Programmed by <a href="#">Diana Melnyk</a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Оголошення</a></li>
+                <li><a href="#">Для партнерів</a></li>
+                <li><a href="#">Політика конфіденційності</a></li>
+            </ul>
+        </div>
+
+        <div class="rightpaws">
+            <img src="images\paw.png" class="rightpaw rightpaw1" alt="Лапка">
+            <img src="images\paw.png" class="rightpaw rightpaw2" alt="Лапка">
+        </div>
+
+        <div class="footer-contact">
+            <p>Зв’яжіться з нами</p>
+            <ul>
+                <li><a href="#">petshomeua@gmail.com</a></li>
+                <li><a href="#">+38 096 176 3761</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><img src="images\Frame 1000002450.png" id="instagram" alt="Instagram"></a>
+                <a href="#"><img src="images\Frame 1000002449.png" id="telegram" alt="Telegram"></a>
+                <a href="#"><img src="images\Frame 1000002448.png" id="facebook" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
